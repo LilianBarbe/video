@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.css"],
+  "sourcesContent": ["[data-vimeo-url] {\n  /* Assurez-vous que le conteneur soit positionn\u00E9 relativement ou absolument pour permettre \u00E0 l'iFrame de couvrir toute la zone. */\n  position: relative;\n  width: 100%;\n  overflow: hidden; /* Cache tout ce qui d\u00E9borde du conteneur. */\n}\n\n[data-vimeo-url] iframe {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 100%;\n  height: 100%;\n}\n\n[data-vimeo-play],\n[data-vimeo-pause],\n[data-vimeo-sound='on'],\n[data-vimeo-sound='off'],\n[data-vimeo-restart],\n[data-vimeo-play-second] {\n  transition-duration: 200ms;\n}\n\n[data-vimeo-play]:hover,\n[data-vimeo-pause]:hover,\n[data-vimeo-sound='on']:hover,\n[data-vimeo-sound='off']:hover,\n[data-vimeo-restart]:hover,\n[data-vimeo-play-second]:hover {\n  transform: scale(1.1);\n}\n"],
+  "mappings": ";AAAA,CAAC;AAEC,YAAU;AACV,SAAO;AACP,YAAU;AACZ;AAEA,CAAC,gBAAgB;AACf,YAAU;AACV,OAAK;AACL,QAAM;AACN,aAAW,UAAU,IAAI,EAAE;AAC3B,SAAO;AACP,UAAQ;AACV;AAEA,CAAC;AACD,CAAC;AACD,CAAC;AACD,CAAC;AACD,CAAC;AACD,CAAC;AACC,uBAAqB;AACvB;AAEA,CAAC,gBAAgB;AACjB,CAAC,iBAAiB;AAClB,CAAC,oBAAsB;AACvB,CAAC,qBAAuB;AACxB,CAAC,mBAAmB;AACpB,CAAC,uBAAuB;AACtB,aAAW,MAAM;AACnB;",
+  "names": []
+}
