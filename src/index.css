@@ -1,0 +1,33 @@
+[data-vimeo-url] {
+  /* Assurez-vous que le conteneur soit positionné relativement ou absolument pour permettre à l'iFrame de couvrir toute la zone. */
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Cache tout ce qui déborde du conteneur. */
+}
+
+[data-vimeo-url] iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+[data-vimeo-play],
+[data-vimeo-pause],
+[data-vimeo-sound='on'],
+[data-vimeo-sound='off'],
+[data-vimeo-restart],
+[data-vimeo-play-second] {
+  transition-duration: 200ms;
+}
+
+[data-vimeo-play]:hover,
+[data-vimeo-pause]:hover,
+[data-vimeo-sound='on']:hover,
+[data-vimeo-sound='off']:hover,
+[data-vimeo-restart]:hover,
+[data-vimeo-play-second]:hover {
+  transform: scale(1.1);
+}
